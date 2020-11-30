@@ -1,8 +1,13 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     
-});
+});*/
 
 $(function(){
     'use strict';
-    console.log("listo!");
+    
+    $('main article:first').hide();
+
+    var copia = $('main article:last').clone();
+    $('main').append(copia); /*Lo copia al final/ prepend (copia) al final  */
+
 });

@@ -4,6 +4,17 @@
 
 $(function(){
     'use strict';
+
+    $('div.logo img').addClass('activo');
+
+    $('.navegacion').show();
+    $('main article:first').addClass('activo');
+    
+    $('.navegacion ul li a').on('click', function(e){
+        $('.navegacion ul li a').removClass ('activo');
+        e.preventDefault();
+        $(this).addClass('activo');
+    });
     
    /*Selectores: $('.class/etiqueta/#id') */
    $('header'); /*= document.querySelector('header')*/
@@ -42,6 +53,11 @@ $(function(){
     /*$('#menu').on('click',function() {
         $('#navegacion').show();
     })*/
+
+
+
+
+    
 
 
 

@@ -24,8 +24,9 @@ div.contenedor {
 /** Navegacion **/
 .navegacion {
   background-color: #db008d;
-  display: none;
+  display: block;
 }
+
 nav {
   width: 1200px;
   margin: 0 auto;

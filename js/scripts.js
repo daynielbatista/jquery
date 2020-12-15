@@ -5,7 +5,17 @@
 $(function(){
     'use strict';
 
-    $('div.logo img').addClass('activo');
+    $('main').on({
+        click: function() {
+            $(this).addClass('fondorojo activo');            
+        }, mouseenter: function() {
+            $(this).addClass('fondorojo');
+        }, mouseleave: function(){
+            $(this).addClass('activo');
+        } 
+    })
+
+    /* $('div.logo img').addClass('activo');
 
     $('.navegacion').show();
     $('main article:first').addClass('activo');
@@ -14,18 +24,18 @@ $(function(){
         $('.navegacion ul li a').removClass ('activo');
         e.preventDefault();
         $(this).addClass('activo');
-    });
+    });*/
     
    /*Selectores: $('.class/etiqueta/#id') */
-   $('header'); /*= document.querySelector('header')*/
+  /* $('header'); /*= document.querySelector('header')
 
    $('header .contenedor');
 
-   $('.navegacion').find('a'); /* =  $('.navegacion a') ;Devuelve todas las a */
+   $('.navegacion').find('a'); /* =  $('.navegacion a') ;Devuelve todas las a 
 
-   $('#navegacion');/*Devuelve toda la navegacion */
+   $('#navegacion');/*Devuelve toda la navegacion 
 
-   $('main article'); /*Devuelve todos los articles */
+   $('main article'); /*Devuelve todos los articles 
 
    $('main article:last p:first') /*Devuelve el primer parrafo del ultimo  articulo */
 

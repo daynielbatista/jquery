@@ -2,6 +2,7 @@
     
 });*/
 
+
 $(function(){
     'use strict';
 
@@ -14,6 +15,7 @@ $(function(){
             $(this).addClass('activo');
         } 
     })
+    
 
     /* $('div.logo img').addClass('activo');
 
